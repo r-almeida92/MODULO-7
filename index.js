@@ -12,11 +12,11 @@ form.addEventListener('submit', function(e) {
     const nomeBeneficiario = document.getElementById ('nome-beneficiario');
     const numeroContaBeneficiario = document.getElementById ('numero-conta');
     const valorDeposito = document.getElementById ('valor-deposito');
-    const mensagemSucesso = `R$ ${valorDeposito.value} depositados com sucesso para o beneficiário ${nomeBeneficiario.value}. Número da conta: ${numeroContaBeneficiario.value}`;
+    const mensagemSucesso = `R$ <b>${valorDeposito.value}</b> depositados com sucesso para o beneficiário <b>${nomeBeneficiario.value}</b>. Número da conta: <b>${numeroContaBeneficiario.value}</b>`;
 
     formEValido = validaNome (nomeBeneficiario.value)
     if (formEValido) {
-        alert (mensagemSucesso);
+        document.querySelector ('.mensagem-sucesso').innerHTML = mensagemSucesso;
 
         nomeBeneficiario.value = '';
         numeroContaBeneficiario.value = '';
