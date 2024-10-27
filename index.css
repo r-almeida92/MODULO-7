@@ -72,3 +72,12 @@ form textarea {
     width: 320px;
     display: none;
 }
+
+.mensagem-erro {
+    font-size: 12;
+    padding: 8px;
+    color: #ff0000;
+    width: 320px;
+    margin-bottom: 8px;
+    display: none;
+}
