@@ -64,3 +64,9 @@ form textarea {
     resize: none; /*desabilitou a opção de redimensionar o campo de texto*/
     height: 90px;
 }
+
+.mensagem-sucesso {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+}
