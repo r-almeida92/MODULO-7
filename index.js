@@ -16,7 +16,9 @@ form.addEventListener('submit', function(e) {
 
     formEValido = validaNome (nomeBeneficiario.value)
     if (formEValido) {
-        document.querySelector ('.mensagem-sucesso').innerHTML = mensagemSucesso;
+        const containerMensagemSucesso = document.querySelector ('.mensagem-sucesso');
+        containerMensagemSucesso.innerHTML = mensagemSucesso;
+        containerMensagemSucesso.style.display = 'block';
 
         nomeBeneficiario.value = '';
         numeroContaBeneficiario.value = '';
