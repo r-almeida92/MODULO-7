@@ -70,4 +70,5 @@ form textarea {
     padding: 16px;
     color: #fff;
     width: 320px;
+    display: none;
 }
