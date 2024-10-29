@@ -24,6 +24,7 @@ form.addEventListener('submit', function(e) {
         numeroContaBeneficiario.value = '';
         valorDeposito.value = '';
     } else{
+        nomeBeneficiario.style.border = '1px solid red';
         document.querySelector ('.mensagem-erro').style.display = 'block';
     }
 })
@@ -33,10 +34,10 @@ nomeBeneficiario.addEventListener('keyup', function(e){
     formEValido = validaNome (e.target.value)
 
     if (!formEValido) {
-        nomeBeneficiario.style.border = '1px solid red';
+        nomeBeneficiario.classList.add ('erro');
         document.querySelector('.mensagem-erro').style.display = 'block';
     } else{
-        nomeBeneficiario.style.border = 'none';
+        nomeBeneficiario.classList.remove ('erro');
         document.querySelector('.mensagem-erro').style.display = 'none';
     }
 });
